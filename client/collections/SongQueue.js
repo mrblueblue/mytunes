@@ -22,9 +22,6 @@ var SongQueue = Songs.extend({
       this.remove(this.first());
     });
 
-    // this.on('play', function(){
-    //   this.playFirst();
-    // });
   },
 
   playFirst: function(){
