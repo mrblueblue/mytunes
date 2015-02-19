@@ -13,5 +13,9 @@ var SongModel = Backbone.Model.extend({
   },
   ended: function(){
     this.trigger('ended', this);
+  },
+  delete: function(){
+    this.trigger('delete', this);
   }
+
 });

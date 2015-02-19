@@ -22,6 +22,10 @@ var SongQueue = Songs.extend({
       this.remove(this.first());
     });
 
+    this.on('delete', function(clicked){
+      this.remove(clicked);
+    });
+
   },
 
   playFirst: function(){
